@@ -23,9 +23,9 @@
 
 
     // Location Object
-    function location(name, longitude, latitude) {
+    function location(name, latitude, longitude) {
       this.name = name
-      this.latlng = new google.maps.LatLng(longitude, latitude);
+      this.latlng = new google.maps.LatLng(latitude, longitude);
       this.focus = function() {
         options.map.panTo(this.latlng); 
       }
